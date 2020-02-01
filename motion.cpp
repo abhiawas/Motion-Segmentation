@@ -10,7 +10,7 @@ int main() {
 
 	// Create a VideoCapture object and open the input file
 	// If the input is the web camera, pass 0 instead of the video file name
-	VideoCapture cap("belt_bg.wmv");
+	VideoCapture cap("Resources/belt_bg.wmv");
 
 	// Check if camera opened successfully
 	if (!cap.isOpened()) {
@@ -47,7 +47,7 @@ int main() {
 	Mean = Mean / count;
 	cap.release();
 
-	cap.open("belt_bg.wmv");
+	cap.open("Resources/belt_bg.wmv");
 
 	// Check if camera opened successfully
 	if (!cap.isOpened()) {
@@ -143,7 +143,7 @@ int main() {
 					washerFlag = true;
 					cout << "Widget Identified as Washer" << endl;
 					cv::Mat washer;
-					washer = imread("washer1.bmp", cv::IMREAD_UNCHANGED);
+					washer = imread("Resources/washer1.bmp", cv::IMREAD_UNCHANGED);
 					cv::imshow("washer", washer);
 
 				}
@@ -154,7 +154,7 @@ int main() {
 					QKeyChainCountFlag = true;
 					cout << "Widget Identified as QKeyChain" << endl;
 					cv::Mat qKey;
-					qKey = imread("q1.bmp", cv::IMREAD_UNCHANGED);
+					qKey = imread("Resources/q1.bmp", cv::IMREAD_UNCHANGED);
 					cv::imshow("qKey", qKey);
 
 
@@ -167,7 +167,7 @@ int main() {
 					pegFlag = true;
 					cout << "Widget Identified as Peg" << endl;
 					cv::Mat peg;
-					peg = imread("peg1.bmp", cv::IMREAD_UNCHANGED);
+					peg = imread("Resources/peg1.bmp", cv::IMREAD_UNCHANGED);
 					cv::imshow("peg", peg);
 
 				}
@@ -179,7 +179,7 @@ int main() {
 					nutFlag = true;
 					cout << "Widget Identified as Nut" << endl;
 					cv::Mat nut;
-					nut = imread("nut1.bmp", cv::IMREAD_UNCHANGED);
+					nut = imread("Resources/nut1.bmp", cv::IMREAD_UNCHANGED);
 					cv::imshow("nut", nut);
 
 				}
@@ -191,7 +191,7 @@ int main() {
 					pipeFlag = true;
 					cout << "Widget Identified as Pipe" << endl;
 					cv::Mat pipe;
-					pipe = imread("pipe1.bmp", cv::IMREAD_UNCHANGED);
+					pipe = imread("Resources/pipe1.bmp", cv::IMREAD_UNCHANGED);
 					cv::imshow("pipe", pipe);
 
 				}
@@ -203,7 +203,7 @@ int main() {
 					prongFlag = true;
 					cout << "Widget Identified as Prong" << endl;
 					cv::Mat prong;
-					prong = imread("prong4.bmp", cv::IMREAD_UNCHANGED);
+					prong = imread("Resources/prong4.bmp", cv::IMREAD_UNCHANGED);
 					cv::imshow("Prong", prong);
 
 				}
